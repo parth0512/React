@@ -35,7 +35,7 @@ export default function Post() {
     <div className="py-8">
       <Container>
         <div
-          className="w-fit flex justify-center align-middle mb-4 relative border rounded-xl p-2"
+          className="w-fit flex justify-center align-middle mb-4 relative  rounded-xl p-1"
           style={{ margin: "0 auto" }}
         >
           <img
@@ -61,7 +61,12 @@ export default function Post() {
         <div className="w-full mb-6">
           <h1 className="text-2xl font-bold">{post.title}</h1>
         </div>
-        <div className="browser-css">{parse(post.content)}</div>
+        <div
+          className="browser-css border rounded-xl bg-gray-100 font-medium w-fit p-3"
+          style={{ margin: "0 auto" }}
+        >
+          {parse(post.content)}
+        </div>
       </Container>
     </div>
   ) : null;

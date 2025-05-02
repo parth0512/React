@@ -28,7 +28,7 @@ function App() {
       <div className="w-full block">
         <Header />
         <main>
-          Blogs: <Outlet />
+          <b style={{ fontSize: "25px" }}>Blogs:</b> <Outlet />
         </main>
         <Footer />
       </div>
